@@ -1,66 +1,65 @@
 # Intro to Terminal
 
-### Find Terminal App <br>
-``COMMAND-SPACE`` and search for "Terminal"
+## Finding Your Terminal App <br>
+``COMMAND-SPACE`` and search for "Terminal" or whichever Command Line Interface you like to use.
 
-``COMMAND-N `` Opens a New Terminal Window
+``COMMAND-N `` opens a new Terminal Window
 
 
-Find More Help (Manual)<br>
-`man [NAME OF COMMAND}`
+## Finding Manuals for Any Command<br>
+`man [NAME OF COMMAND}`, for example:
 >man ls
 
+### About Vim
+Vim is a basic text editor in which manual files are read.
 
-Vim : a text editor
+**To navigate through Vim, use** ``j``(down) and ``k``(up). <br>
+**To exit a Vim file, use** ``q``.
 
-**navigating:** ``j``(down) and ``k``(up) |
-**exit file:**  ``q``
-
-*Note: Always press Enter(Return) to execute command.*
+**Note:** *Always press ``Enter / Return`` to execute commands in the CLI.*
 
 # Navigating Terminal
-### Moving Around Command Line
-For text editing: ``Left`` and ``right`` arrow keys.
-Searching recently used commands in current tab: ``Up arrow``.
+## Moving Around the Command Line
+**When editing text, use** the ``Left`` and ``right`` arrow keys.
+**In order to search recently used commands in current tab, use the** ``Up arrow``.
 
 ``CTL-A`` goes to beginning of command line
 
 ``CTL-E`` goes to end of command line
 
-``CTL-C`` keyboard interrupt, creates new line
+``CTL-C`` keyboard interrupt, creates a new line
 
-``ls`` list the contents of your current directory
+``ls`` lists the contents of your current directory
 
 ``ls -l`` provides full list of information about the current directory, such as total files, names of files, permissions, number of subdirectories, size of file, date of last modification, etc.
 
 ``pwd`` returns the name of your current directory
 
-
 ``TAB`` autocompletes name of directory
 
-## Change Directory
-``cd DIRECTORY`` Navigates to a specific directory via the terminal.
+## Changing Directories
+``cd DIRECTORY`` navigates to a specific directory via the terminal, for example:
 > cd Desktop/
 
 # Managing Files via Terminal
 
-### Make Directory
-``mkdir NEWDIRECTORY`` Creates a new directory.
+### Making Directories
+``mkdir NEWDIRECTORY`` creates a new directory, for example:
 >mkdir fieldcore
 
 ### Renaming Files
-``mv`` renames/moves the file to a new destination
+``mv`` renames/moves the file to a new destination, for example:
 
->same directory: mv fieldcoretext.txt fieldcoremoved.txt
+>*within the same directory* mv fieldcoretext.txt fieldcoremoved.txt
 
->one level up: mv fieldcoretext.txt ../fieldcoremoved.txt
+>*to a directory one level up* mv fieldcoretext.txt ../fieldcoremoved.txt
 
 # Copying Files
-``cp [ORIGINALFILE] [NEWFILE]`` copies files from one location to another
+``cp [ORIGINALFILE] [NEWFILE]`` copies files from one location to another, for example:
 >cp fieldcoretext.txt newplace
 
 
-`cp -R [ORIGINALDIRECTORY] [NEWDIRECTORY]` copies directory and all of its contents
+`cp -R [ORIGINALDIRECTORY] [NEWDIRECTORY]` copies a directory and all of its contents, for example:
 >cp -R fieldcore newplace
 
 
