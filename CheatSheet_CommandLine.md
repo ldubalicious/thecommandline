@@ -5,7 +5,6 @@
 
 ``COMMAND-N `` opens a new Terminal Window
 
-
 ## Finding Manuals for Any Command<br>
 `man [NAME OF COMMAND}`, for example:
 >man ls
@@ -13,7 +12,9 @@
 ### About Vim
 Vim is a basic text editor in which manual files are read.
 
-**To navigate through Vim, use** ``j``(down) and ``k``(up). <br>
+**To navigate through Vim, use** ``j``(down) and ``k``(up).
+
+
 **To exit a Vim file, use** ``q``.
 
 **Note:** *Always press ``Enter / Return`` to execute commands in the CLI.*
@@ -21,6 +22,8 @@ Vim is a basic text editor in which manual files are read.
 # Navigating Terminal
 ## Moving Around the Command Line
 **When editing text, use** the ``Left`` and ``right`` arrow keys.
+
+
 **In order to search recently used commands in current tab, use the** ``Up arrow``.
 
 ``CTL-A`` goes to beginning of command line
@@ -43,18 +46,18 @@ Vim is a basic text editor in which manual files are read.
 
 # Managing Files via Terminal
 
-### Making Directories
+## Making Directories
 ``mkdir NEWDIRECTORY`` creates a new directory, for example:
 >mkdir fieldcore
 
-### Renaming Files
+## Renaming Files
 ``mv`` renames/moves the file to a new destination, for example:
 
->*within the same directory* mv fieldcoretext.txt fieldcoremoved.txt
+>**_within the same directory_** mv fieldcoretext.txt fieldcoremoved.txt
 
->*to a directory one level up* mv fieldcoretext.txt ../fieldcoremoved.txt
+>**_to a directory one level up_** mv fieldcoretext.txt ../fieldcoremoved.txt
 
-# Copying Files
+## Copying Files
 ``cp [ORIGINALFILE] [NEWFILE]`` copies files from one location to another, for example:
 >cp fieldcoretext.txt newplace
 
@@ -63,38 +66,38 @@ Vim is a basic text editor in which manual files are read.
 >cp -R fieldcore newplace
 
 
-``scp`` copies files or folders over a secure, encrypted network
+``scp`` copies files or folders over a secure, encrypted network. For example:
 > scp fieldcore
 
-### Removing Files
-`rm [FILE]` remove files
+## Removing Files
+`rm [FILE]` removes files, for example:
 >rm fieldcoretext.txt
 
-`rmdir [NAMEOFDIRECTORY]` removes directory
+`rmdir [NAMEOFDIRECTORY]` removes directory, for example:
 > rmdir fieldcore
 
-`rm -r [NAMEOFDIRECTORY]` removes directory and all contents
+`rm -r [NAMEOFDIRECTORY]` removes directory and all contents, for example:
 > rm -r fieldcore
 
-### Creating Text Files
-`touch [NEWFILE].txt` creates a new text file in the current directory
->  touch fieldcoretext.txt
-
-###Using Super User
-`sudo [COMMAND]` forces computer to execute a command as the "super user"
+## Using Super User
+`sudo [COMMAND]` forces computer to execute a command as the "super user", for example:
 > sudo rm fieldcoretext.txt
 
 ` sudo !!` shortcut to repeat previous command
 
-###Managing Text Files
-`nano [NEWFILE].txt`allows you to edit a text file using Nano
+## Creating Text Files
+`touch [NEWFILE].txt` creates a new text file in the current directory, for example:
+>  touch fieldcoretext.txt
+
+## Managing Text Files
+`nano [NEWFILE].txt`allows you to edit a text file using Nano, for example:
 >nano fieldcoretext.txt
 
 `CTL-O` saves changes to text file
 
 `CTL-X` exits text file
 
-*Note: other commands are listed at the bottom of the Nano file*
+**Note:** *Other available commands are listed at the bottom of the Nano file.*
 
 `grep [WORD OR STRING] [FILE].txt`searches for word or string of words in a text file
 > grep "home" fieldcoretext.txt
